@@ -21,7 +21,7 @@ export interface IBase {
     updatedAt: string
 }
 
-interface IArtist extends IBase {
+export interface IArtist extends IBase {
     name: string
     image: TImageUrl 
     isVerified: boolean
@@ -32,4 +32,5 @@ export interface ITrack extends IBase {
     title: string
     duration: number
     isPublished: boolean
+    audioUrl: string
 }
